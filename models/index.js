@@ -1,3 +1,3 @@
 module.exports = {
-    MyPortfolio: require("./models")
+    ContactMe: require("./models")
   };

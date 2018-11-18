@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const myPortfolioSchema = new Schema({
+const contactMeSchema = new Schema({
     name: {
         type: String,
         required: true
@@ -20,6 +20,6 @@ const myPortfolioSchema = new Schema({
     }
 });
 
-const MyPortfolio = mongoose.model("MyPortfolio", myPortfolioSchema);
+const ContactMe = mongoose.model("ContactMe", contactMeSchema);
 
-module.exports = MyPortfolio;
+module.exports = ContactMe;

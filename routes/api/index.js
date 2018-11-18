@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const myportfolioRoutes = require("./myportfolio");
+const contactMeRoutes = require("./contactme");
 
-// myportfolio routes
-router.use("/myportfolio", myportfolioRoutes);
+// contactme routes
+router.use("/contactme", contactMeRoutes);
 
 module.exports = router;
