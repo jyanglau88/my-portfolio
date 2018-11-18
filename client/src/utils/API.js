@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default {
   // Gets all of it
-  getContactMe: function() {
+  getContactMes: function() {
     return axios.get("/api/contactme");
   },
   // Gets it with the given id
