@@ -7,7 +7,7 @@ import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 
-class Contact extends Component {
+class Connect extends Component {
   state = {
     contactme: [],
     name: "",
@@ -102,7 +102,7 @@ class Contact extends Component {
           </Col>
           <Col size="md-9 sm-12">
             <Jumbotron>
-              <h1>Message Board</h1>
+            <h1>Message Board:</h1>
             </Jumbotron>
             {this.state.contactmes.length ? (
               <List>
@@ -130,4 +130,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default Connect;

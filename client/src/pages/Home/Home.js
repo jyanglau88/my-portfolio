@@ -3,7 +3,7 @@ import Jumbotron from "../../components/Jumbotron";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 
-class Contact extends Component {
+class Home extends Component {
     render() {
         return (
             <Container fluid>
@@ -19,4 +19,4 @@ class Contact extends Component {
     }
 }
 
-export default Contact;
+export default Home;

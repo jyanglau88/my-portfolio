@@ -4,7 +4,7 @@ import './App.css';
 
 //pages
 import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Connect from "./pages/Connect";
 import Home from "./pages/Home";
 import NoMatch from "./pages/NoMatch"; //404 Page
 import Portfolio from "./pages/Portfolio"
@@ -20,7 +20,7 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/About" component={About} />
-        <Route exact path="/Contact" component={Contact} />
+        <Route exact path="/Connect" component={Connect} />
         <Route exact path="/Portfolio" component={Portfolio} />
         
         {/* <Route exact path="/PlaceHolder/:id" component={PlaceHolder} />
