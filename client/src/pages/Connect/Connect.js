@@ -43,7 +43,7 @@ class Connect extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    if (this.state.name && this.state.email && this.state.message && this.state.date) {
+    if (this.state.name && this.state.message && this.state.date) {
       API.saveContactMe({
         name: this.state.name,
         email: this.state.email,
@@ -78,7 +78,7 @@ class Connect extends Component {
                 value={this.state.email}
                 onChange={this.handleInputChange}
                 name="email"
-                placeholder="Email (Required)"
+                placeholder="Email (Optional)"
               />
               <TextArea
                 value={this.state.message}
@@ -93,7 +93,7 @@ class Connect extends Component {
                 placeholder="Date (Required)"
               />
               <FormBtn
-                disabled={!(this.state.sig && this.state.prescription && this.state.message && this.state.date)}
+                disabled={!(this.state.name && this.state.message && this.state.date)}
                 onClick={this.handleFormSubmit}
               >
                 Submit
@@ -108,7 +108,7 @@ class Connect extends Component {
               <List>
                 {this.state.contactmes.map(contactme => (
                   <ListItem key={contactme._id}>
-                    <Link to={"/Message/" + contactme._id}>
+                    <Link to={"/contactmes/" + contactme._id}>
                       <strong>
                         {contactme.name}
                         {contactme.email}

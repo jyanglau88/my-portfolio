@@ -10,7 +10,7 @@ mongoose.connect(
 
 const petSeed = [
   {
-    name: "Joe Lau",
+    name: "Joe",
     email: "jyanglau88@gmail.com",
     message: "Welcome to my website!",
     date: "11/24/2018"
